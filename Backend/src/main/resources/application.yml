@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: brickstore-backend
+  profiles:
+    active: dev
+
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+# SpringDoc OpenAPI / Swagger Configuration
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    tags-sorter: alpha
+    operations-sorter: method
+    display-request-duration: true
+
+# Security / JWT
+app:
+  jwt:
+    secret: ${JWT_SECRET:404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970}
+    access-expiration-ms: ${JWT_ACCESS_EXPIRATION_MS:900000}        # 15 phút
+    refresh-expiration-ms: ${JWT_REFRESH_EXPIRATION_MS:604800000}    # 7 ngày
+

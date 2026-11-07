@@ -554,13 +554,13 @@ Prefix: `/api/v1/admin/`
 
 ## 10. Checklist Khởi tạo Dự án (Action Items ngay)
 
-- [ ] Tạo project Spring Boot 3.3.x với Java 21, Maven.
-- [ ] Thêm các starter: `spring-boot-starter-web`, `spring-boot-starter-data-jpa`, `spring-boot-starter-security`, `spring-boot-starter-validation`.
-- [ ] Thêm dependencies: PostgreSQL Driver, Flyway Core, Redisson, MapStruct, Lombok, Springdoc OpenAPI.
-- [ ] Soạn thảo `docker-compose.yml` gồm:
+- [x] Tạo project Spring Boot 3.3.x với Java 21, Maven.
+- [x] Thêm các starter: `spring-boot-starter-web`, `spring-boot-starter-data-jpa`, `spring-boot-starter-security`, `spring-boot-starter-validation`.
+- [x] Thêm dependencies: PostgreSQL Driver, Flyway Core, Redisson, MapStruct, Lombok, Springdoc OpenAPI.
+- [x] Soạn thảo `docker-compose.yml` gồm:
   - PostgreSQL 16 (có cài sẵn extension pgvector).
   - Redis 7 Alpine.
-- [ ] Tạo file `.env.example` định nghĩa các biến môi trường cấu hình DB, JWT secret, Cloudinary key, VNPay sandbox.
-- [ ] Thiết lập migration Flyway đầu tiên `V1__init_security_and_users.sql`.
-- [ ] Tạo khung thư mục Package by Feature như cấu trúc đề xuất.
-- [ ] Chạy kiểm thử kết nối và verify trên Swagger UI: `http://localhost:8080/swagger-ui.html`.
+- [x] Tạo file `.env.example` định nghĩa các biến môi trường cấu hình DB, JWT secret, Cloudinary key, VNPay sandbox.
+- [x] Thiết lập migration Flyway đầu tiên `V1__init_security_and_users.sql`.
+- [x] Tạo khung thư mục Package by Feature như cấu trúc đề xuất.
+- [x] Chạy kiểm thử kết nối và verify trên Swagger UI: `http://localhost:8080/swagger-ui.html`.

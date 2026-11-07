@@ -1,0 +1,22 @@
+# Environment Variables (Secrets)
+.env
+*.env.local
+
+# Build & Dependencies
+target/
+build/
+node_modules/
+.mvn/apache-maven-*/
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+
+# OS specific
+Thumbs.db
+.DS_Store
+
